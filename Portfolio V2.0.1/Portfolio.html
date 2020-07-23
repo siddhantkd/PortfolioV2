@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <title>My Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+  <style>
+    #connect {
+      background-color: #0275d8;
+      border-radius: 20px;
+      color: #FFFFFF;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .section1 {
+
+      background-image: -webkit-linear-gradient(to left, #ECE9E6, #FFFFFF);
+      background-image: -o-linear-gradient(left, #ECE9E6, #FFFFFF);
+      background-image: linear-gradient(to right, #ECE9E6, #FFFFFF);
+      display: flex;
+
+    }
+
+    .left {
+      order: 1;
+    }
+    .img1{
+      height: 200px;
+      margin-right: 20px;
+    }
+    .right {
+      order: 2;
+    }
+    .intro-text0{
+      font-size: 35px;
+    }
+    .intro-text1{
+      font-size: 35px;
+    }
+    .type{
+      font-size: 35px;
+    }
+
+    .jump-icon{
+
+      color: #0275d8;
+      animation: bounce 2s infinite;
+
+    }
+    .jumping-icon{
+      height: 20px;
+      width: 12px;
+      background-color:#0275d8;
+      border-radius: 40%;
+      margin-left: 30px;
+
+    }
+
+    .Heading-About{
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-align: justify;
+    }
+    .Content-About{
+      text-align: justify;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    flex-direction: column;
+    }
+
+  .left {
+    order: 2;
+    }
+
+  .right {
+    order: 1;
+    }
+    .intro-text0{
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+    .intro-text1{
+      font-size: 20px;
+      padding-bottom: 2px;
+    }
+    .type{
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    .img1{
+      height: 200px;
+      text-align: center;
+      margin-left: 5px;
+    }
+    .img2{
+      height: 200px;
+      text-align: center;
+      margin-left: 5px;
+    }
+    .intro-text2{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .resume-btn{
+      padding-top: 30px;
+    }
+    .img2{
+      height: 200px;
+      height: 250px;
+      margin-top: 0px;
+      margin-left: 35px;
+    }
+    .Heading-About{
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .intro-text0{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  .intro-text1{
+    font-size: 35px;
+    margin-left: 20px;
+  }
+  .type{
+    font-size: 35px;
+    margin-left: 20px;
+  }
+  .img1{
+    height: 200px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  #navbarText{
+    font-size: 15px;
+  }
+  .navbar-brand{
+    font-size: 15px;
+  }
+  .img2{
+    height: 200px;
+    height: 250px;
+    margin-top: 0px;
+  }
+  .Heading-About{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+}
+@media only screen and (max-width: 768px){
+  .section1 {
+    flex-direction: column;
+    }
+
+  .left {
+    order: 2;
+    }
+
+  .right {
+    order: 1;
+    }
+    .img1{
+      height: 200px;
+    }
+    .img2{
+      height: 200px;
+      height: 250px;
+    }
+    .intro-text0{
+
+      margin-left: 0px;
+    }
+    .intro-text1{
+
+      margin-left: 0px;
+    }
+    .type{
+
+      margin-left: 0px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .img1{
+    height: 200px;
+  }
+  .img2{
+    margin-top: 50px;
+    height: 300px;
+  }
+  .intro-text0{
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .intro-text1{
+    font-size: 24px;
+    margin-left: 0px;
+  }
+  .type{
+    font-size: 24px;
+    margin-left: 0px;
+  }
+  .Heading-About{
+    font-size: 24px;
+  }
+  .Content-About{
+    font-size:15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .img1{
+    height: 300px;
+  }
+  .img2{
+    height: 400px;
+    margin-top: 0px;
+  }
+  .intro-text0{
+    font-size: 25px;
+  }
+  .intro-text1{
+    font-size: 30px;
+  }
+  .type{
+    font-size: 30px;
+  }
+  .Heading-About{
+    font-size: 30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .img1{
+    height: 300px;
+  }
+  .intro-text0{
+    font-size: 25px;
+  }
+  .intro-text1{
+    font-size: 35px;
+  }
+  .type{
+    font-size: 35px;
+  }
+  .img2{
+    height: 420px;
+
+  }
+  .Heading-About{
+    font-size: 30px;
+  }
+  .content-About{
+    font-size:25px;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!------------------------------------Navabar Starts-------------------------------------------->
+
+
+
+  <div class="container">
+    <nav class="navbar navbar-expand navbar-light navbar-sticky my-sm-3">
+      <a class="navbar-brand" href="#">Siddhant</a>
+      <!--<button class="navbar-toggler" type="button" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>-->
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item ml-sm-5 ml-1">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item ml-sm-5 ml-1">
+            <a class="nav-link px-3 py-n3" id="connect" href="#">Connect<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+  <!------------------------------------Navabar Ends --------------------------------------------->
+
+
+
+  <!-----------------------------------Section1 Starts ------------------------------------------->
+
+
+
+  <div class="container-fluid section1">
+    <div class="container">
+      <div class="my-sm-2">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 py-sm-5 py-2 left">
+            <div class="intro-text0" style="color:#0275d8; font-weight:600;">
+              Hey, I am Siddhant,
+            </div>
+            <div class="mt-sm-5 intro-text" style="">
+              <div class="intro-text1" style="">
+                FRONT END WEB-DEVELOPER
+              </div>
+              <div class="">
+                <span class="type" style="font-weight:bold;"></span>
+                <script src="typed.js">
+                </script>
+                <script>
+                  var typed = new Typed('.type', {
+                    strings: [
+                      'ROBOTICS ENTHUSIAST.',
+                    ],
+
+                    typeSpeed: 70,
+                    backSpeed: 100,
+                    backDelay: 700,
+                    fadeOut: false,
+                    fadeOutClass: 'typed-fade-out',
+                    fadeOutDelay: 500,
+                    showCursor: true,
+                    cursorChar: '|',
+                    autoInsertCss: true
+                    // Default value
+
+                  });
+                </script>
+              </div>
+            </div>
+            <div class="mt-sm-5 intro-text2">
+              Pursuing BTech in Electrical Engineering <br>
+              @Assam Engineering College
+            </div>
+            <div class="mt-sm-5 resume-btn">
+              <button type="button" class="btn btn-primary px-sm-5 btn-rounded" style="border-radius:20px;">Resume</button>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-4 py-5 mx-sm-5 my-sm-4 right">
+              <img src="undraw_Firmware_jw6u.svg" class="img1" style="" alt="">
+              </svg>
+            </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+    <!-----------------------------------Section1 Ends ------------------------------------------->
+
+
+
+
+
+
+
+    <!-----------------------------------Section2 Ends ------------------------------------------->
+
+
+
+    <div class="container-fluid section2">
+      <div class="container">
+        <div class="my-sm-2">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="Illustration-About.svg" class="img2" alt="">
+            </div>
+            <div class="col-sm-6 py-sm-5 py-2">
+              <div class="Heading-About">
+                LET ME INTRODUCE MYSELF
+              </div>
+              <div class="Content-About py-sm-5 py-2 mr-lg-4" >
+                <div class="my-2">I am Siddhant Kumar Das, currently pursuing Bachelor of Technology (BTech) at Assam Engineering College, Jalukbari with <b>Electrical Engineering Specialization(4th Sem). </b> </div>
+                <div class="mb-2">I have been participating and building bots for competetive robotics competetions and I am also very keen to dive deeper into the field of <b>Autonomous Mobile Robotics.</b></div>
+                <div class="">I develop and design Front-end of website and web applications and open to any working opportunities.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-----------------------------------Section2 Ends ------------------------------------------->
+
+</body>
+
+</html>
